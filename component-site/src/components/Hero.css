@@ -370,19 +370,50 @@ nav {
 }
 
 
+.item1{
+  overflow: hidden;
+  border-radius: 1rem;
+}
+.item1 img{
+  width: auto;
+  height: 450px;
+  object-fit: cover;
+  transition: transform 0.8s;
+}
+
+.item1:hover img{
+  transform: scale(1.2);
+}
+
+.item2{
+  overflow: hidden;
+  border-radius: 1rem;
+}
 .item2 img{
   width: 200px;
   height: 200px;
-  border-radius: 1rem;
   object-fit: cover;
+  transition: transform 0.8s;
+}
+
+.item2:hover img{
+  transform: scale(1.2);
+}
+
+.item3{
+  overflow: hidden;
+  border-radius: 1rem;
 }
 .item3 img{
   width: 200px;
   height: 200px;
-  border-radius: 1rem;
   object-fit: cover;
+  transition: transform 0.8s;
 }
 
+.item3:hover img{
+  transform: scale(1.2);
+}
 .item4{
   overflow: hidden;
   border-radius: 1rem;
