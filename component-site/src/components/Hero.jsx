@@ -51,7 +51,7 @@ const Hero = () => {
 
          <div className="grid">
           <div className="item1" style={{ gridArea: "item1" }}>
-            <img style={{width: "415px", borderRadius:"2rem"}} src={assets.item1} alt="" />
+            <img  src={assets.item1} alt="" />
           </div>
           <div className="item2" style={{ gridArea: "item2" }}>
             <img src={assets.item2} alt="" />
