@@ -7,7 +7,7 @@ import item5 from './item5.jpg'
 import item6 from './image6.jpg'
 import item7 from './item7.jpg'
 import item8 from './item8.jpg'
-
+import damascus from './damascus1.jpg'
 
 export const assets ={
 
@@ -18,5 +18,6 @@ export const assets ={
     item5,
     item6,
     item7,
-    item8
+    item8,
+    damascus
 }
