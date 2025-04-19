@@ -25,6 +25,8 @@ const Hero = () => {
         
         <div className="main">
 
+         <img className='bg-img' src={assets.damascus} alt="" />
+         <div className="gradient-overlay"></div>
          <div className="main-content">
           <BlurText
             text="Create beautiful art with "
