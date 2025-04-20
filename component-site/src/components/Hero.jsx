@@ -29,7 +29,7 @@ const Hero = () => {
          <div className="gradient-overlay"></div>
          <div className="main-content">
           <BlurText
-            text="Create beautiful art with "
+            text="Discover the Power of"
             delay={150}
             animateBy="words"
             direction="top"
@@ -37,7 +37,7 @@ const Hero = () => {
             className="text-2xl mb-8"
           />
           <BlurText
-            text="Artificial Intelligent"
+            text="AI-Generated Art"
             delay={150}
             animateBy="words"
             direction="top"
@@ -78,6 +78,10 @@ const Hero = () => {
           </div>
          </div>
         </div>
+{/* ========================== middle content=====================================*/}
+      <div className="middle-content">
+        <div className="gradient-overlay1"></div>
+      </div>
 
     </div>
   

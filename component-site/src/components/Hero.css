@@ -8,6 +8,7 @@
   padding: 0%;
   width: 100%;
   height: 100vh;
+ 
 }
 
 
@@ -123,8 +124,11 @@ nav {
 
 
 /* Main content */
-
+.main{
+  scroll-snap-align: start;
+}
 .main .bg-img{
+  scroll-snap-align: start;
   position: absolute;
   left: 0;
   width: 100%;
@@ -377,7 +381,7 @@ nav {
 
 .grid{
   width: 100%;
-  height: 40rem;
+  height: 45rem;
   justify-content: center;
   background-color: #000000;
   display: grid;
@@ -389,6 +393,7 @@ nav {
               'item6 item7 item8 item8';
   gap: 1rem;            
   z-index: 4;
+  scroll-snap-align: start;
 }
 
 
@@ -523,4 +528,40 @@ nav {
   transform: scale(1.2);
 }
 
+/* =====================media responsiveness===================== */
+
+@media(max-width:56em){
+
+  .grid{
+    grid-auto-rows: 180px;
+    grid-auto-columns: 180px;
+    width: 100%;
+    height: 80rem;
+    grid-template-areas: 
+      'item1 item1'
+      'item1 item1'
+      'item2 item3'
+      'item4 item5'
+      'item8 item8'
+      'item6 item7';
+  }
+}
+
 /* ==================Middle content=================== */
+
+.middle-content{
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background-color: #e174fa;
+  display: flex;
+  
+}
+
+.gradient-overlay1 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background:linear-gradient(0deg, rgb(2, 2, 2,0.8),rgb(0, 0, 0));
+  z-index: 1;
+}
