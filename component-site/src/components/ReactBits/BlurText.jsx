@@ -14,6 +14,7 @@ const BlurText = ({
   animationTo,
   easing = 'easeOutCubic',
   onAnimationComplete,
+  fontSize = 'clamp(2rem, 5vw, 4.375rem)', // Default responsive font size
 }) => {
   const elements = animateBy === 'words' ? text.split(' ') : text.split('');
   const [inView, setInView] = useState(false);
@@ -71,8 +72,22 @@ const BlurText = ({
   );
 
   return (
-    <p ref={ref} className={`blur-text ${className}`}
-    style={{ color:'white',fontSize: '70px', fontFamily: 'Nova Flat' }}>
+    <p 
+      ref={ref} 
+      className={`blur-text ${className}`}
+      style={{ 
+        color: 'white',
+        fontSize: fontSize,
+        fontFamily: 'Nova Flat',
+        margin: '0',
+        padding: '0.5rem',
+        lineHeight: '1.2',
+        maxWidth: '100%',
+        overflowWrap: 'break-word',
+        wordWrap: 'break-word',
+        hyphens: 'auto'
+      }}
+    >
       {springs.map((props, index) => (
         <animated.span
           key={index}
